@@ -14,12 +14,17 @@ Example: python dependency-parser.py Desktop/Reports/dependency-checker.xml CRIT
 The severity in argument has to be provided in capital letter.
 
 
+
 2. dependency-review.sh
 
 This is a shellscript script that inturn calls the above script to fetch issue counts based on severity. Based on the count it fails a "Pipeline" if it is more than threshold.
 
 The command to run this script is as below:
 
-bash dependency-review.sh <DEPENDENCY_PARSER.PY> <DEPENDENCY_XML_REPORT> [{CRITICAL,32},{HIGH,33},{MEDIUM,30},{LOW,3}]
+bash dependency-review.sh <DEPENDENCY_PARSER.PY> <DEPENDENCY_XML_REPORT> <SEVERITY_THRESHOLD>
 
-Example: bash dependency-review.sh Desktop/Scripts/dependency-parser.py Desktop/Reports/dependency-checker.xml [{CRITICAL,32},{HIGH,33},{MEDIUM,30},{LOW,3}]
+Example: bash dependency-review.sh Desktop/Scripts/dependency-parser.py Desktop/Reports/dependency-checker.xml [{CRITICAL,0},{HIGH,0},{MEDIUM,0},{LOW,3}]
+
+The severity threshold in argument has to be provided in the below format:
+
+[{CRITICAL,0},{HIGH,0},{MEDIUM,0},{LOW,3}]
