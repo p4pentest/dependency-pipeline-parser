@@ -1,5 +1,6 @@
 import bs4
 import sys
+import lxml
 
 from bs4 import BeautifulSoup as bs
 content = []
