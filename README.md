@@ -12,10 +12,8 @@ python dependency-parser.py <DEPENDENCY_XML_REPORT> <SEVERITY_IN_CAPS>
 Example: python dependency-parser.py Desktop/Reports/dependency-checker.xml CRITICAL
 
 The severity in argument has to be provided in capital letter.
-
-
-
-2. dependency-review.sh
+<br><br><br>
+<b>2. dependency-review.sh</b>
 
 This is a shellscript script that inturn calls the above script to fetch issue counts based on severity. Based on the count it fails a "Pipeline" if it is more than threshold.
 
