@@ -1,7 +1,7 @@
 # dependency-pipeline-parser
 There are two scripts in this repository:
 
-<b>1. dependency-parser.py<b>
+<b>1. dependency-parser.py</b>
 
 This is an XML parser of OWASP dependency-checker report written in python. This script requires additional modules "bs4" and "lxml" to run.
 
