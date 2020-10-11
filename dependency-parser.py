@@ -12,7 +12,7 @@ with open(report, "r") as file:
     content = file.readlines()
 
     content = "".join(content)
-    bs_content = bs(content, "xml")
+    bs_content = bs(content, "lxml")
 
     count = 0
     tot = 0
