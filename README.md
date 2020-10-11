@@ -4,9 +4,13 @@ There are two scripts in this repository:
 1. dependency-parser.py
 
 This is an XML parser of OWASP dependency-checker report written in python. This script requires additional modules "bs4" and "lxml" to run.
+
 The command to run this script is as below:
+
 python dependency-parser.py <DEPENDENCY_XML_REPORT> <SEVERITY_IN_CAPS>
+
 Example: python dependency-parser.py Desktop/Reports/dependency-checker.xml CRITICAL
+
 The severity in argument has to be provided in capital letter.
 
 
